@@ -1,0 +1,877 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 2,
+    "name": "Long Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 3,
+    "name": "Color Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 4,
+    "name": "Golden Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 5,
+    "name": "Silver Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 6,
+    "name": "Twinkle Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 7,
+    "name": "Mini Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 8,
+    "name": "Premium Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 9,
+    "name": "Kids Sparkler Pack",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 10,
+    "name": "Family Sparkler Pack",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 11,
+    "name": "Classic Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 12,
+    "name": "Golden Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 13,
+    "name": "Silver Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 14,
+    "name": "Color Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 15,
+    "name": "Crackling Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 16,
+    "name": "Mini Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 17,
+    "name": "Big Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 18,
+    "name": "Premium Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 19,
+    "name": "Flower Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 20,
+    "name": "Family Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 21,
+    "name": "Classic Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 22,
+    "name": "Color Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 23,
+    "name": "Ground Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 24,
+    "name": "Whistling Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 25,
+    "name": "Twinkle Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 26,
+    "name": "Mini Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 27,
+    "name": "Big Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 28,
+    "name": "Premium Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 29,
+    "name": "Double Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 30,
+    "name": "Family Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 31,
+    "name": "Classic Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 32,
+    "name": "Color Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 33,
+    "name": "Whistling Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 34,
+    "name": "Star Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 35,
+    "name": "Sky Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 36,
+    "name": "Multi Color Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 37,
+    "name": "Premium Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 38,
+    "name": "Long Flight Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 39,
+    "name": "Family Rocket Pack",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 40,
+    "name": "Special Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 41,
+    "name": "5 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 42,
+    "name": "10 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 43,
+    "name": "12 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 44,
+    "name": "15 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 45,
+    "name": "20 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 46,
+    "name": "25 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 47,
+    "name": "30 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 48,
+    "name": "36 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 49,
+    "name": "49 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 50,
+    "name": "60 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 51,
+    "name": "Mini Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 52,
+    "name": "Classic Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 53,
+    "name": "Color Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 54,
+    "name": "Golden Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 55,
+    "name": "Silver Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 56,
+    "name": "Crackling Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 57,
+    "name": "Big Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 58,
+    "name": "Premium Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 59,
+    "name": "Family Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 60,
+    "name": "Special Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 61,
+    "name": "Fancy Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 62,
+    "name": "Color Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 63,
+    "name": "Twinkle Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 64,
+    "name": "Crackling Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 65,
+    "name": "Multi Color Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 66,
+    "name": "Premium Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 67,
+    "name": "Celebration Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 68,
+    "name": "Family Fancy Pack",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 69,
+    "name": "Festival Fancy Pack",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 70,
+    "name": "Special Fancy Item",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 71,
+    "name": "Mini Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 72,
+    "name": "Classic Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 73,
+    "name": "Family Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 74,
+    "name": "Mega Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 75,
+    "name": "Premium Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 76,
+    "name": "Kids Celebration Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 77,
+    "name": "Festival Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 78,
+    "name": "Grand Celebration Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 79,
+    "name": "Diwali Gift Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 80,
+    "name": "Ultimate Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 81,
+    "name": "Color Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 82,
+    "name": "Rainbow Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 83,
+    "name": "Blue Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 84,
+    "name": "Red Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 85,
+    "name": "Green Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 86,
+    "name": "Purple Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 87,
+    "name": "Yellow Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 88,
+    "name": "Multi Color Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 89,
+    "name": "Color Celebration Pack",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 90,
+    "name": "Rainbow Celebration Pack",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 91,
+    "name": "Ground Spinner Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 92,
+    "name": "Ground Fountain",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 93,
+    "name": "Crackling Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 94,
+    "name": "Color Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 95,
+    "name": "Twinkle Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 96,
+    "name": "Mini Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 97,
+    "name": "Family Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 98,
+    "name": "Premium Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 99,
+    "name": "Festival Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 100,
+    "name": "Special Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 101,
+    "name": "Diwali Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 102,
+    "name": "Family Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 103,
+    "name": "Premium Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 104,
+    "name": "Kids Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 105,
+    "name": "Celebration Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 106,
+    "name": "Festival Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 107,
+    "name": "Classic Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 108,
+    "name": "Grand Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 109,
+    "name": "Special Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 110,
+    "name": "Royal Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 111,
+    "name": "Festival Special Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 112,
+    "name": "Early Bird Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 113,
+    "name": "Family Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 114,
+    "name": "Grand Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 115,
+    "name": "Premium Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 116,
+    "name": "Celebration Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 117,
+    "name": "Diwali Special Box",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 118,
+    "name": "Mega Festival Box",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 119,
+    "name": "Special Value Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 120,
+    "name": "Grand Value Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 121,
+    "name": "Celebration Mix Pack",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 122,
+    "name": "Festival Night Pack",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 123,
+    "name": "Grand Family Mix",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 124,
+    "name": "Diwali Celebration Mix",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 125,
+    "name": "Premium Festival Mix",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  }
+]
