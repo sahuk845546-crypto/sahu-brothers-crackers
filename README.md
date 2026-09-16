@@ -1,25 +1,28 @@
-# Sahu Brothers Crackers — Free Website
+# Sahu Brothers Crackers — Website
 
-## What's included
-- Premium dark/gold Diwali design
-- Animated floating spark particles
-- 125 catalogue entries across 12 categories
-- Search, category chips and sorting
-- Cart
-- Customer delivery form
-- WhatsApp order-request button
-- Mobile responsive layout
-- Your uploaded shop photo as the hero image
+Premium mobile-first Diwali catalogue website for **SAHU BROTHERS CRACKERS**, Maharajpur.
+
+## Included
+- Fixed gold/black brand logo in `assets/logo.png`
+- Prominent storefront image in `assets/shop-photo.png`
+- 125 starter catalogue entries across categories
+- Search, category filters, sorting and cart
+- WhatsApp order-request flow
+- Home-service request form
+- Mobile responsive layout and festive animations
+- Safety/legal notice for applicable fireworks rules
 
 ## Important
-The catalogue names are starter/demo entries. Before publishing, replace them with your actual products, confirmed prices, stock and legally permitted delivery options.
+The 125 catalogue entries are starter/demo catalogue names. Replace them with the shop's **actual product names, photos, prices and stock** before publishing as a final sales catalogue.
 
-## Free hosting
-You can publish this static website free using GitHub Pages:
-1. Create a GitHub account.
-2. Create a new public repository, e.g. `sahu-brothers-crackers`.
-3. Upload `index.html`, `style.css`, and the `assets` folder.
-4. In repository Settings → Pages, choose the `main` branch and root folder.
-5. GitHub will provide a free `github.io` website address.
+## Free GitHub Pages
+1. Upload all files and the complete `assets` folder to the repository.
+2. Open **Settings → Pages**.
+3. Select **Deploy from a branch → main → / (root)**.
+4. Save and open the GitHub Pages URL.
 
-No paid hosting is required for this static version.
+If the logo or shop image ever shows a broken icon, check that these exact files exist:
+- `assets/logo.png`
+- `assets/shop-photo.png`
+
+Only sell/deliver fireworks that are legally permitted and comply with applicable licensing, storage, transport, age and local rules.
