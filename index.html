@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Sahu Brothers Crackers — Diwali fireworks catalogue and local order request website.">
+<title>Sahu Brothers Crackers | Maharajpur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="fireworks"></div>
+<header class="nav">
+  <a class="brand" href="#home"><span>🎆</span><div><b>SAHU BROTHERS</b><small>CRACKERS</small></div></a>
+  <nav>
+    <a href="#home">Home</a><a href="#shop">Collection</a><a href="#delivery">Home Service</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <div class="pill">🪔 DIWALI 2026 • MAHARAJPUR</div>
+    <h1>Light Up Your<br><span>Celebration.</span></h1>
+    <p>Explore our large Diwali catalogue and send your selected items as an order request.</p>
+    <div class="hero-actions"><a class="gold-btn" href="#shop">Explore Collection</a><a class="ghost-btn" href="#delivery">🏠 Home Service</a></div>
+    <div class="stats"><div><strong>120+</strong><small>Catalogue Items</small></div><div><strong>📍</strong><small>Maharajpur</small></div><div><strong>📲</strong><small>WhatsApp Order</small></div></div>
+  </div>
+  <div class="hero-photo"><img src="assets/shop-photo.jpg" alt="Sahu Brothers Crackers shop"></div>
+</section>
+
+<section class="notice">
+  <span>⚠️</span><div><b>Safety & legal notice</b><p>Only items permitted under applicable fireworks, licensing, transport, age and local rules should be sold or delivered. Order requests are subject to stock and legal delivery availability.</p></div>
+</section>
+
+<section id="shop" class="catalogue">
+  <div class="section-head"><div><span class="eyebrow">OUR COLLECTION</span><h2>Find your celebration.</h2></div><div class="count"><b id="visibleCount">125</b> items</div></div>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="🔎 Search products..." oninput="renderProducts()">
+    <select id="category" onchange="renderProducts()"><option value="All">All Categories</option></select>
+    <select id="sort" onchange="renderProducts()"><option value="default">Sort: Featured</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option></select>
+  </div>
+  <div id="chips" class="chips"></div>
+  <div id="products" class="products"></div>
+</section>
+
+<section id="delivery" class="delivery">
+  <div class="delivery-card">
+    <span class="eyebrow">HOME SERVICE</span><h2>Order from home.</h2>
+    <p>Select your items, add your delivery details and send the request on WhatsApp. We'll confirm stock, price and delivery availability.</p>
+    <div class="delivery-grid">
+      <input id="custName" placeholder="Your name">
+      <input id="custPhone" inputmode="tel" placeholder="Mobile number">
+      <input id="custAddress" class="wide" placeholder="Full delivery address">
+      <input id="custPincode" inputmode="numeric" placeholder="Pincode">
+      <select id="deliveryArea"><option value="">Select service area</option><option>Maharajpur</option><option>Other nearby area — confirm on WhatsApp</option></select>
+    </div>
+    <button class="gold-btn big" onclick="sendWhatsApp()">📲 Send Order Request on WhatsApp</button>
+  </div>
+  <div class="delivery-side"><div class="orb">🛵</div><h3>Local delivery</h3><p>Availability depends on applicable local rules, safe transport requirements and stock.</p><a href="#contact">Need help? Contact us →</a></div>
+</section>
+
+<section id="contact" class="contact">
+  <span class="eyebrow">SAHU BROTHERS CRACKERS</span>
+  <h2>Celebrate responsibly.</h2>
+  <p>📍 Maharajpur</p>
+  <div class="contact-actions">
+    <a href="tel:7898510480">📞 7898510480</a>
+    <a href="tel:7828338964">📞 7828338964</a>
+    <a href="https://wa.me/917898510480" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Sahu Brothers Crackers • Maharajpur • <a href="#home">Back to top ↑</a></footer>
+
+<div id="cartModal" class="modal">
+  <div class="modal-box"><button class="close" onclick="closeCart()">×</button><span class="eyebrow">YOUR CART</span><h2>Selected items</h2><div id="cartItems"></div><div class="cart-total"><span>Items</span><b id="cartTotal">0</b></div><p class="muted">Prices are not pre-filled in this demo catalogue. Confirm current price and stock with the shop.</p><button class="gold-btn big" onclick="sendWhatsApp()">📲 Send on WhatsApp</button></div>
+</div>
+<script>
+const PRODUCTS = [
+  {
+    "id": 1,
+    "name": "Classic Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 2,
+    "name": "Long Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 3,
+    "name": "Color Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 4,
+    "name": "Golden Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 5,
+    "name": "Silver Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 6,
+    "name": "Twinkle Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 7,
+    "name": "Mini Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 8,
+    "name": "Premium Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 9,
+    "name": "Kids Sparkler Pack",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 10,
+    "name": "Family Sparkler Pack",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 11,
+    "name": "Classic Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 12,
+    "name": "Golden Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 13,
+    "name": "Silver Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 14,
+    "name": "Color Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 15,
+    "name": "Crackling Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 16,
+    "name": "Mini Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 17,
+    "name": "Big Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 18,
+    "name": "Premium Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 19,
+    "name": "Flower Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 20,
+    "name": "Family Anar",
+    "category": "Anar",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 21,
+    "name": "Classic Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 22,
+    "name": "Color Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 23,
+    "name": "Ground Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 24,
+    "name": "Whistling Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 25,
+    "name": "Twinkle Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 26,
+    "name": "Mini Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 27,
+    "name": "Big Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 28,
+    "name": "Premium Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 29,
+    "name": "Double Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 30,
+    "name": "Family Spinner",
+    "category": "Chakri",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 31,
+    "name": "Classic Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 32,
+    "name": "Color Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 33,
+    "name": "Whistling Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 34,
+    "name": "Star Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 35,
+    "name": "Sky Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 36,
+    "name": "Multi Color Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 37,
+    "name": "Premium Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 38,
+    "name": "Long Flight Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 39,
+    "name": "Family Rocket Pack",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 40,
+    "name": "Special Rocket",
+    "category": "Rockets",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 41,
+    "name": "5 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 42,
+    "name": "10 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 43,
+    "name": "12 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 44,
+    "name": "15 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 45,
+    "name": "20 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 46,
+    "name": "25 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 47,
+    "name": "30 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 48,
+    "name": "36 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 49,
+    "name": "49 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 50,
+    "name": "60 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 51,
+    "name": "Mini Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 52,
+    "name": "Classic Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 53,
+    "name": "Color Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 54,
+    "name": "Golden Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 55,
+    "name": "Silver Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 56,
+    "name": "Crackling Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 57,
+    "name": "Big Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 58,
+    "name": "Premium Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 59,
+    "name": "Family Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 60,
+    "name": "Special Flower Pot",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 61,
+    "name": "Fancy Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 62,
+    "name": "Color Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 63,
+    "name": "Twinkle Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 64,
+    "name": "Crackling Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 65,
+    "name": "Multi Color Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 66,
+    "name": "Premium Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 67,
+    "name": "Celebration Fountain",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 68,
+    "name": "Family Fancy Pack",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 69,
+    "name": "Festival Fancy Pack",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 70,
+    "name": "Special Fancy Item",
+    "category": "Fancy Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 71,
+    "name": "Mini Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 72,
+    "name": "Classic Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 73,
+    "name": "Family Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 74,
+    "name": "Mega Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 75,
+    "name": "Premium Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 76,
+    "name": "Kids Celebration Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 77,
+    "name": "Festival Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 78,
+    "name": "Grand Celebration Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 79,
+    "name": "Diwali Gift Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 80,
+    "name": "Ultimate Combo",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 81,
+    "name": "Color Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 82,
+    "name": "Rainbow Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 83,
+    "name": "Blue Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 84,
+    "name": "Red Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 85,
+    "name": "Green Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 86,
+    "name": "Purple Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 87,
+    "name": "Yellow Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 88,
+    "name": "Multi Color Smoke",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 89,
+    "name": "Color Celebration Pack",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 90,
+    "name": "Rainbow Celebration Pack",
+    "category": "Color Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 91,
+    "name": "Ground Spinner Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 92,
+    "name": "Ground Fountain",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 93,
+    "name": "Crackling Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 94,
+    "name": "Color Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 95,
+    "name": "Twinkle Ground Item",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 96,
+    "name": "Mini Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 97,
+    "name": "Family Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 98,
+    "name": "Premium Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 99,
+    "name": "Festival Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 100,
+    "name": "Special Ground Pack",
+    "category": "Ground Items",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 101,
+    "name": "Diwali Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 102,
+    "name": "Family Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 103,
+    "name": "Premium Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 104,
+    "name": "Kids Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 105,
+    "name": "Celebration Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 106,
+    "name": "Festival Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 107,
+    "name": "Classic Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 108,
+    "name": "Grand Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 109,
+    "name": "Special Gift Box",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 110,
+    "name": "Royal Gift Pack",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 111,
+    "name": "Festival Special Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 112,
+    "name": "Early Bird Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 113,
+    "name": "Family Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 114,
+    "name": "Grand Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 115,
+    "name": "Premium Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 116,
+    "name": "Celebration Saver Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 117,
+    "name": "Diwali Special Box",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 118,
+    "name": "Mega Festival Box",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 119,
+    "name": "Special Value Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 120,
+    "name": "Grand Value Pack",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 121,
+    "name": "Celebration Mix Pack",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 122,
+    "name": "Festival Night Pack",
+    "category": "Combo Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 123,
+    "name": "Grand Family Mix",
+    "category": "Gift Packs",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 124,
+    "name": "Diwali Celebration Mix",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  },
+  {
+    "id": 125,
+    "name": "Premium Festival Mix",
+    "category": "Special Offers",
+    "price": 0,
+    "image": null
+  }
+];
+let cart = {};
+let selectedCategory = "All";
+
+const $ = id => document.getElementById(id);
+function icon(cat){
+  const m={"Phuljhari":"✨","Anar":"🌸","Chakri":"🌀","Rockets":"🚀","Aerial Shots":"🎆","Flower Pots":"🌺","Fancy Items":"💫","Combo Packs":"🎁","Color Items":"🌈","Ground Items":"🔥","Gift Packs":"🎀","Special Offers":"🏷️"};
+  return m[cat] || "🎇";
+}
+function setup(){
+  const sel=$("category");
+  [...new Set(PRODUCTS.map(p=>p.category))].forEach(c=>{let o=document.createElement("option");o.value=c;o.textContent=c;sel.appendChild(o)});
+  $("visibleCount").textContent=PRODUCTS.length;
+  const chips=$("chips");
+  ["All",...new Set(PRODUCTS.map(p=>p.category))].forEach(c=>{
+    let b=document.createElement("button"); b.textContent=(c==="All"?"✨ ":icon(c)+" ")+c; b.onclick=()=>{selectedCategory=c;sel.value=c;renderProducts()}; chips.appendChild(b);
+  });
+  renderProducts(); updateCart();
+}
+function renderProducts(){
+  const q=$("search").value.toLowerCase().trim(), cat=$("category").value, sort=$("sort").value;
+  selectedCategory=cat;
+  let list=PRODUCTS.filter(p=>(cat==="All"||p.category===cat)&&(selectedCategory==="All"||p.category===selectedCategory)&&(!q||p.name.toLowerCase().includes(q)||p.category.toLowerCase().includes(q)));
+  if(sort==="az") list.sort((a,b)=>a.name.localeCompare(b.name)); if(sort==="za") list.sort((a,b)=>b.name.localeCompare(a.name));
+  $("visibleCount").textContent=list.length;
+  $("products").innerHTML=list.map(p=>`<article class="product"><div class="product-art"><span>${icon(p.category)}</span><small>${p.category}</small></div><div class="product-info"><div><h3>${p.name}</h3><p>Availability & current price on confirmation</p></div><button onclick="add(${p.id})">+ ADD</button></div></article>`).join("") || `<div class="empty">No products found. Try another search.</div>`;
+}
+function add(id){cart[id]=(cart[id]||0)+1;updateCart();toast("Added to cart");}
+function remove(id){if(cart[id]){cart[id]--;if(cart[id]<=0)delete cart[id]}updateCart()}
+function updateCart(){
+  let count=Object.values(cart).reduce((a,b)=>a+b,0);$("cartCount").textContent=count;
+  $("cartItems").innerHTML=Object.keys(cart).length?Object.entries(cart).map(([id,qty])=>{let p=PRODUCTS.find(x=>x.id==id);return `<div class="cart-row"><span>${icon(p.category)} ${p.name}<small>${p.category}</small></span><div><button onclick="remove(${p.id})">−</button><b>${qty}</b><button onclick="add(${p.id})">+</button></div></div>`}).join(""):"<p class='muted'>Your cart is empty.</p>";
+  $("cartTotal").textContent=count+" item"+(count===1?"":"s");
+}
+function openCart(){$("cartModal").classList.add("show");updateCart()} function closeCart(){$("cartModal").classList.remove("show")}
+function sendWhatsApp(){
+  const entries=Object.entries(cart); if(!entries.length){toast("Add items first");return}
+  const name=$("custName").value.trim(), phone=$("custPhone").value.trim(), addr=$("custAddress").value.trim(), pin=$("custPincode").value.trim(), area=$("deliveryArea").value;
+  let lines=entries.map(([id,q])=>{let p=PRODUCTS.find(x=>x.id==id);return `• ${p.name} × ${q}`}).join("\n");
+  let msg=`Namaste Sahu Brothers Crackers!%0A%0AI want to send an order request:%0A${encodeURIComponent(lines)}%0A%0AName: ${encodeURIComponent(name||"Not provided")}%0AMobile: ${encodeURIComponent(phone||"Not provided")}%0AAddress: ${encodeURIComponent(addr||"Not provided")}%0APincode: ${encodeURIComponent(pin||"Not provided")}%0AArea: ${encodeURIComponent(area||"Not selected")}%0A%0APlease confirm stock, current prices and delivery availability.`;
+  window.open("https://wa.me/917898510480?text="+msg,"_blank");
+}
+function toast(t){let x=document.createElement("div");x.className="toast";x.textContent=t;document.body.appendChild(x);setTimeout(()=>x.remove(),1600)}
+// lightweight decorative particles
+for(let i=0;i<26;i++){let s=document.createElement("i");s.className="spark";s.style.left=Math.random()*100+"vw";s.style.animationDelay=Math.random()*7+"s";s.style.animationDuration=(4+Math.random()*5)+"s";$("fireworks").appendChild(s)}
+setup();
+</script>
+</body>
+</html>
