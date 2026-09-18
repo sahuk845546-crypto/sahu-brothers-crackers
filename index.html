@@ -11,7 +11,7 @@
 <body>
 <div id="fireworks"></div>
 <header class="nav">
-  <a class="brand" href="#home" aria-label="Sahu Brothers Crackers home"><img src="sahu-brothers-logo.png" alt="Sahu Brothers Crackers logo" width="190" height="70"><span class="brand-text"><b>SAHU BROTHERS</b><small>CRACKERS</small></span></a>
+  <a class="brand" href="#home" aria-label="Sahu Brothers Crackers home"><img src="assets/logo.png" alt="Sahu Brothers Crackers logo" width="190" height="70"><span class="brand-text"><b>SAHU BROTHERS</b><small>CRACKERS</small></span></a>
   <nav>
     <a href="#home">Home</a><a href="#shop">Collection</a><a href="#delivery">Home Service</a><a href="#contact">Contact</a>
   </nav>
@@ -25,9 +25,9 @@
     <h1>Light Up Your<br><span>Celebration.</span></h1>
     <p>Explore our large Diwali catalogue and send your selected items as an order request.</p>
     <div class="hero-actions"><a class="gold-btn" href="#shop">Explore Collection</a><a class="ghost-btn" href="#delivery">🏠 Home Service</a></div>
-    <div class="stats"><div><strong>125+</strong><small>Catalogue Items</small></div><div><strong>📍</strong><small>Maharajpur</small></div><div><strong>📲</strong><small>WhatsApp Order</small></div></div>
+    <div class="stats"><div><strong id="catalogueTotal">145+</strong><small>Catalogue Items</small></div><div><strong>📍</strong><small>Maharajpur</small></div><div><strong>📲</strong><small>WhatsApp Order</small></div></div>
   </div>
-  <div class="hero-photo"><div class="photo-badge">✨ OUR STORE • MAHARAJPUR</div><img src="shop-photo.jpg" alt="Sahu Brothers Crackers storefront in Maharajpur" width="1536" height="1024" fetchpriority="high"><div class="photo-caption"><strong>SAHU BROTHERS CRACKERS</strong><span>Premium festive collection • Local service</span></div></div>
+  <div class="hero-photo"><div class="photo-badge">✨ OUR STORE • MAHARAJPUR</div><img src="assets/shop-photo.png" alt="Sahu Brothers Crackers storefront in Maharajpur" width="1536" height="1024" fetchpriority="high"><div class="photo-caption"><strong>SAHU BROTHERS CRACKERS</strong><span>Premium festive collection • Local service</span></div></div>
 </section>
 
 <section class="notice">
@@ -35,7 +35,7 @@
 </section>
 
 <section id="shop" class="catalogue">
-  <div class="section-head"><div><span class="eyebrow">OUR COLLECTION</span><h2>Find your celebration.</h2></div><div class="count"><b id="visibleCount">125</b> items</div></div>
+  <div class="section-head"><div><span class="eyebrow">OUR COLLECTION</span><h2>Find your celebration.</h2></div><div class="count"><b id="visibleCount">145</b> items</div></div>
   <div class="toolbar">
     <input id="search" type="search" placeholder="🔎 Search products..." oninput="renderProducts()">
     <select id="category" onchange="renderProducts()"><option value="All">All Categories</option></select>
@@ -80,6 +80,167 @@
 </div>
 <script>
 const PRODUCTS = [
+  {
+    "id": 1001,
+    "name": "Can Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": "assets/products/can-anardana.jpg",
+    "featured": true
+  },
+  {
+    "id": 1002,
+    "name": "Lambi Bhari Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": "assets/products/lambi-bhari-phuljhari.jpg",
+    "featured": true
+  },
+  {
+    "id": 1003,
+    "name": "Bada Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": null,
+    "featured": true
+  },
+  {
+    "id": 1004,
+    "name": "Aloo Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": null,
+    "featured": true
+  },
+  {
+    "id": 1005,
+    "name": "1000 Bamboo Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/1000-bamboo-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1006,
+    "name": "2000 Bamboo Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/2000-bamboo-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1007,
+    "name": "5000 Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/5000-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1008,
+    "name": "Sky Shot – Danda",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/sky-shot-danda.jpg",
+    "featured": true
+  },
+  {
+    "id": 1009,
+    "name": "30 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/30-shot.jpg",
+    "featured": true
+  },
+  {
+    "id": 1010,
+    "name": "12 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/12-shot.jpg",
+    "featured": true
+  },
+  {
+    "id": 1011,
+    "name": "Machis Mumbai",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/machis-mumbai.jpg",
+    "featured": true
+  },
+  {
+    "id": 1012,
+    "name": "Pop Pop",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/pop-pop.jpg",
+    "featured": true
+  },
+  {
+    "id": 1013,
+    "name": "Sutri Bomb",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/sutri-bomb.jpg",
+    "featured": true
+  },
+  {
+    "id": 1014,
+    "name": "Vishva Tiranga",
+    "category": "Special Items",
+    "price": 0,
+    "image": "assets/products/vishva-tiranga.jpg",
+    "featured": true
+  },
+  {
+    "id": 1015,
+    "name": "Sky Lamp",
+    "category": "Sky Lamp",
+    "price": 0,
+    "image": "assets/products/sky-lamp.jpg",
+    "featured": true
+  },
+  {
+    "id": 1016,
+    "name": "Tower Pots",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": "assets/products/tower-pots.jpg",
+    "featured": true
+  },
+  {
+    "id": 1017,
+    "name": "Siren / Whistling Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/siren-whistling-chakri.jpg",
+    "featured": true,
+    "premium": true
+  },
+  {
+    "id": 1018,
+    "name": "Ground Chakri 45cm",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/ground-chakri-45cm.jpg",
+    "featured": true
+  },
+  {
+    "id": 1019,
+    "name": "Ground Chakri 70cm",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/ground-chakri-70cm.jpg",
+    "featured": true
+  },
+  {
+    "id": 1020,
+    "name": "Sparklers Collection",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": "assets/products/sparklers-collection.jpg",
+    "featured": true
+  },
   {
     "id": 1,
     "name": "Classic Phuljhari",
@@ -967,7 +1128,7 @@ function icon(cat){
 function setup(){
   const sel=$("category");
   [...new Set(PRODUCTS.map(p=>p.category))].forEach(c=>{let o=document.createElement("option");o.value=c;o.textContent=c;sel.appendChild(o)});
-  $("visibleCount").textContent=PRODUCTS.length;
+  $("visibleCount").textContent=PRODUCTS.length; $("catalogueTotal").textContent=PRODUCTS.length+"+";
   const chips=$("chips");
   ["All",...new Set(PRODUCTS.map(p=>p.category))].forEach(c=>{
     let b=document.createElement("button"); b.textContent=(c==="All"?"✨ ":icon(c)+" ")+c; b.onclick=()=>{selectedCategory=c;sel.value=c;renderProducts()}; chips.appendChild(b);
@@ -977,10 +1138,10 @@ function setup(){
 function renderProducts(){
   const q=$("search").value.toLowerCase().trim(), cat=$("category").value, sort=$("sort").value;
   selectedCategory=cat;
-  let list=PRODUCTS.filter(p=>(cat==="All"||p.category===cat)&&(selectedCategory==="All"||p.category===selectedCategory)&&(!q||p.name.toLowerCase().includes(q)||p.category.toLowerCase().includes(q)));
+  let list=PRODUCTS.filter(p=>(cat==="All"||p.category===cat)&&(!q||p.name.toLowerCase().includes(q)||p.category.toLowerCase().includes(q)));
   if(sort==="az") list.sort((a,b)=>a.name.localeCompare(b.name)); if(sort==="za") list.sort((a,b)=>b.name.localeCompare(a.name));
   $("visibleCount").textContent=list.length;
-  $("products").innerHTML=list.map(p=>`<article class="product"><div class="product-art"><span>${icon(p.category)}</span><small>${p.category}</small></div><div class="product-info"><div><h3>${p.name}</h3><p>Availability & current price on confirmation</p></div><button onclick="add(${p.id})">+ ADD</button></div></article>`).join("") || `<div class="empty">No products found. Try another search.</div>`;
+  $("products").innerHTML=list.map(p=>`<article class="product"><div class="product-art">${p.image?`<img src="${p.image}" alt="${p.name}" loading="lazy">`:`<span>${icon(p.category)}</span>`}<small>${p.category}${p.premium?" • PREMIUM":""}</small></div><div class="product-info"><div><h3>${p.name}</h3><p>Current price & stock confirmed on WhatsApp</p></div><button onclick="add(${p.id})">+ ADD</button></div></article>`).join("") || `<div class="empty">No products found. Try another search.</div>`;
 }
 function add(id){cart[id]=(cart[id]||0)+1;updateCart();toast("Added to cart");}
 function remove(id){if(cart[id]){cart[id]--;if(cart[id]<=0)delete cart[id]}updateCart()}

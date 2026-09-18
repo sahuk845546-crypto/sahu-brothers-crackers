@@ -1,5 +1,166 @@
 [
   {
+    "id": 1001,
+    "name": "Can Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": "assets/products/can-anardana.jpg",
+    "featured": true
+  },
+  {
+    "id": 1002,
+    "name": "Lambi Bhari Phuljhari",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": "assets/products/lambi-bhari-phuljhari.jpg",
+    "featured": true
+  },
+  {
+    "id": 1003,
+    "name": "Bada Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": null,
+    "featured": true
+  },
+  {
+    "id": 1004,
+    "name": "Aloo Anardana",
+    "category": "Anar",
+    "price": 0,
+    "image": null,
+    "featured": true
+  },
+  {
+    "id": 1005,
+    "name": "1000 Bamboo Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/1000-bamboo-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1006,
+    "name": "2000 Bamboo Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/2000-bamboo-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1007,
+    "name": "5000 Ki Ladi",
+    "category": "Ladi",
+    "price": 0,
+    "image": "assets/products/5000-ki-ladi.jpg",
+    "featured": true
+  },
+  {
+    "id": 1008,
+    "name": "Sky Shot – Danda",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/sky-shot-danda.jpg",
+    "featured": true
+  },
+  {
+    "id": 1009,
+    "name": "30 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/30-shot.jpg",
+    "featured": true
+  },
+  {
+    "id": 1010,
+    "name": "12 Shot",
+    "category": "Aerial Shots",
+    "price": 0,
+    "image": "assets/products/12-shot.jpg",
+    "featured": true
+  },
+  {
+    "id": 1011,
+    "name": "Machis Mumbai",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/machis-mumbai.jpg",
+    "featured": true
+  },
+  {
+    "id": 1012,
+    "name": "Pop Pop",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/pop-pop.jpg",
+    "featured": true
+  },
+  {
+    "id": 1013,
+    "name": "Sutri Bomb",
+    "category": "Ground Items",
+    "price": 0,
+    "image": "assets/products/sutri-bomb.jpg",
+    "featured": true
+  },
+  {
+    "id": 1014,
+    "name": "Vishva Tiranga",
+    "category": "Special Items",
+    "price": 0,
+    "image": "assets/products/vishva-tiranga.jpg",
+    "featured": true
+  },
+  {
+    "id": 1015,
+    "name": "Sky Lamp",
+    "category": "Sky Lamp",
+    "price": 0,
+    "image": "assets/products/sky-lamp.jpg",
+    "featured": true
+  },
+  {
+    "id": 1016,
+    "name": "Tower Pots",
+    "category": "Flower Pots",
+    "price": 0,
+    "image": "assets/products/tower-pots.jpg",
+    "featured": true
+  },
+  {
+    "id": 1017,
+    "name": "Siren / Whistling Chakri",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/siren-whistling-chakri.jpg",
+    "featured": true,
+    "premium": true
+  },
+  {
+    "id": 1018,
+    "name": "Ground Chakri 45cm",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/ground-chakri-45cm.jpg",
+    "featured": true
+  },
+  {
+    "id": 1019,
+    "name": "Ground Chakri 70cm",
+    "category": "Chakri",
+    "price": 0,
+    "image": "assets/products/ground-chakri-70cm.jpg",
+    "featured": true
+  },
+  {
+    "id": 1020,
+    "name": "Sparklers Collection",
+    "category": "Phuljhari",
+    "price": 0,
+    "image": "assets/products/sparklers-collection.jpg",
+    "featured": true
+  },
+  {
     "id": 1,
     "name": "Classic Phuljhari",
     "category": "Phuljhari",

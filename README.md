@@ -26,3 +26,7 @@ If the logo or shop image ever shows a broken icon, check that these exact files
 - `assets/shop-photo.png`
 
 Only sell/deliver fireworks that are legally permitted and comply with applicable licensing, storage, transport, age and local rules.
+
+
+## Product photos
+The catalogue now includes the product photos supplied in the conversation. Two named products (Bada Anardana and Aloo Anardana) are listed without a photo until matching photos are supplied. Prices remain 0/not pre-filled so the shop can confirm current prices and stock on WhatsApp.
