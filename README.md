@@ -1,32 +1,15 @@
-# Sahu Brothers Crackers — Website
+# Sahu Brothers Crackers — GitHub replacement package
 
-Premium mobile-first Diwali catalogue website for **SAHU BROTHERS CRACKERS**, Maharajpur.
+Upload ALL of these together to the root of the GitHub repository:
+- index.html
+- style.css
+- products.json
+- sahu-brothers-logo.png
+- shop-photo.jpg
+- assets/products/ (all product photos)
 
-## Included
-- Fixed gold/black brand logo in `assets/logo.png`
-- Prominent storefront image in `assets/shop-photo.png`
-- 125 starter catalogue entries across categories
-- Search, category filters, sorting and cart
-- WhatsApp order-request flow
-- Home-service request form
-- Mobile responsive layout and festive animations
-- Safety/legal notice for applicable fireworks rules
+IMPORTANT:
+The product page now loads `products.json` and the photos from `assets/products/`.
+Do not rename the `assets` or `products` folders.
 
-## Important
-The 125 catalogue entries are starter/demo catalogue names. Replace them with the shop's **actual product names, photos, prices and stock** before publishing as a final sales catalogue.
-
-## Free GitHub Pages
-1. Upload all files and the complete `assets` folder to the repository.
-2. Open **Settings → Pages**.
-3. Select **Deploy from a branch → main → / (root)**.
-4. Save and open the GitHub Pages URL.
-
-If the logo or shop image ever shows a broken icon, check that these exact files exist:
-- `assets/logo.png`
-- `assets/shop-photo.png`
-
-Only sell/deliver fireworks that are legally permitted and comply with applicable licensing, storage, transport, age and local rules.
-
-
-## Product photos
-The catalogue now includes the product photos supplied in the conversation. Two named products (Bada Anardana and Aloo Anardana) are listed without a photo until matching photos are supplied. Prices remain 0/not pre-filled so the shop can confirm current prices and stock on WhatsApp.
+Some supplied photos could not be matched unambiguously to the exact later product names, so only confidently matched photos are assigned. The remaining catalogue items still appear with category icons until their exact photo is supplied.

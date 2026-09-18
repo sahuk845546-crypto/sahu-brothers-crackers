@@ -12,7 +12,7 @@
     "name": "Lambi Bhari Phuljhari",
     "category": "Phuljhari",
     "price": 0,
-    "image": "assets/products/lambi-bhari-phuljhari.jpg",
+    "image": "assets/products/product-04.jpg",
     "featured": true
   },
   {
@@ -36,7 +36,7 @@
     "name": "1000 Bamboo Ki Ladi",
     "category": "Ladi",
     "price": 0,
-    "image": "assets/products/1000-bamboo-ki-ladi.jpg",
+    "image": "assets/products/product-12.jpg",
     "featured": true
   },
   {
@@ -52,7 +52,7 @@
     "name": "5000 Ki Ladi",
     "category": "Ladi",
     "price": 0,
-    "image": "assets/products/5000-ki-ladi.jpg",
+    "image": "assets/products/product-05.jpg",
     "featured": true
   },
   {
@@ -68,7 +68,7 @@
     "name": "30 Shot",
     "category": "Aerial Shots",
     "price": 0,
-    "image": "assets/products/30-shot.jpg",
+    "image": "assets/products/product-11.webp",
     "featured": true
   },
   {
@@ -76,7 +76,7 @@
     "name": "12 Shot",
     "category": "Aerial Shots",
     "price": 0,
-    "image": "assets/products/12-shot.jpg",
+    "image": "assets/products/product-13.jpg",
     "featured": true
   },
   {
@@ -92,7 +92,7 @@
     "name": "Pop Pop",
     "category": "Ground Items",
     "price": 0,
-    "image": "assets/products/pop-pop.jpg",
+    "image": "assets/products/product-08.jpg",
     "featured": true
   },
   {
@@ -100,7 +100,7 @@
     "name": "Sutri Bomb",
     "category": "Ground Items",
     "price": 0,
-    "image": "assets/products/sutri-bomb.jpg",
+    "image": "assets/products/product-18.jpg",
     "featured": true
   },
   {
@@ -124,7 +124,7 @@
     "name": "Tower Pots",
     "category": "Flower Pots",
     "price": 0,
-    "image": "assets/products/tower-pots.jpg",
+    "image": "assets/products/product-03.png",
     "featured": true
   },
   {
@@ -132,7 +132,7 @@
     "name": "Siren / Whistling Chakri",
     "category": "Chakri",
     "price": 0,
-    "image": "assets/products/siren-whistling-chakri.jpg",
+    "image": "assets/products/product-06.jpg",
     "featured": true,
     "premium": true
   },
@@ -141,7 +141,7 @@
     "name": "Ground Chakri 45cm",
     "category": "Chakri",
     "price": 0,
-    "image": "assets/products/ground-chakri-45cm.jpg",
+    "image": "assets/products/product-02.jpg",
     "featured": true
   },
   {
@@ -149,7 +149,7 @@
     "name": "Ground Chakri 70cm",
     "category": "Chakri",
     "price": 0,
-    "image": "assets/products/ground-chakri-70cm.jpg",
+    "image": "assets/products/product-01.jpg",
     "featured": true
   },
   {
@@ -157,7 +157,7 @@
     "name": "Sparklers Collection",
     "category": "Phuljhari",
     "price": 0,
-    "image": "assets/products/sparklers-collection.jpg",
+    "image": "assets/products/product-10.jpg",
     "featured": true
   },
   {
@@ -1034,5 +1034,21 @@
     "category": "Special Offers",
     "price": 0,
     "image": null
+  },
+  {
+    "id": 126,
+    "name": "Gold Balls",
+    "category": "Special Items",
+    "price": 0,
+    "image": "assets/products/product-15.jpg",
+    "featured": true
+  },
+  {
+    "id": 127,
+    "name": "Mercury Red",
+    "category": "Special Items",
+    "price": 0,
+    "image": "assets/products/product-19.jpg",
+    "featured": true
   }
 ]
